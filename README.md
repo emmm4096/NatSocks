@@ -6,19 +6,19 @@ lcx with socks server
 ### 监听   
 -listen port1 port2  
 #### 说明
-同时监听port1端口和port2端口，当两个客户端主动连接上这两个监听端口之后，nb负责这两个端口间的数据转发。  
+同时监听port1端口和port2端口，当两个客户端主动连接上这两个监听端口之后，NatSocks负责这两个端口间的数据转发。  
 #### 示例  
 NatSocks -listen 1997 2017  
 ### 转发 
 -tran port1 ip:port2  
 #### 说明
-本地开始监听port1端口，当port1端口上接收到来自客户端的主动连接之后，nb将主动连接ip:port2，并且负责port1端口和ip:port2之间的数据转发。
+本地开始监听port1端口，当port1端口上接收到来自客户端的主动连接之后，NatSocks将主动连接ip:port2，并且负责port1端口和ip:port2之间的数据转发。
 #### 示例 
 NatSocks -tran 1997 192.168.1.2:338  
 ### 主动连接
 -slave ip1:port1 ip2:port2  
 #### 说明
-本地开始主动连接ip1:port1主机和ip2:port2主机，当连接成功之后，nb负责这两个主机之间的数据转发。
+本地开始主动连接ip1:port1主机和ip2:port2主机，当连接成功之后，NatSocks负责这两个主机之间的数据转发。
 #### 示例 
 NatSocks -slave 127.0.0.1:3389 8.8.8.8:1997
 ### socks5 server
