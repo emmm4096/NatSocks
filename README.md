@@ -27,7 +27,7 @@ NatSocks -slave 127.0.0.1:3389 8.8.8.8:1997
 本地建立一个socks5服务，只需要提供本地ip:port
 #### 示例 
 NatSocks -socks 127.0.0.1:1080
-### socks5 server slave
+### socks5 server & port forward  
 -resocks ip1:port1 ip2:port2
 #### 说明
 本地建立一个socks5服务并且主动转发到公网服务器端口上，只需要提供本地ip:port
