@@ -47,3 +47,7 @@ NatSocks -resocks 127.0.0.1:1080 8.8.8.8:1997
 内网机器(127.0.0.1)：NatSocks -resocks 127.0.0.1:1080 8.8.8.8:1997
 
 在内网机器(127.0.0.1)开了1080端口并转发到了公网机器(8.8.8.8)的2017端口
+
+## 感谢
+https://github.com/cw1997/NATBypass
+https://github.com/txthinking/socks5
