@@ -48,6 +48,14 @@ NatSocks -resocks 127.0.0.1:1080 8.8.8.8:1997
 
 在内网机器(127.0.0.1)开了1080端口并转发到了公网机器(8.8.8.8)的2017端口
 
+## 安装or下载  
+### 自行安装
+安装go环境以及依赖库后
+go build NatSocks.go
+
+### windows,linux,osx (x64/x84) releases  
+https://github.com/Lz1y/NatSocks/releases/tag/v1.0
+
 ## 感谢
 https://github.com/cw1997/NATBypass  
 https://github.com/txthinking/socks5
