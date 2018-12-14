@@ -30,7 +30,7 @@ NatSocks -socks 127.0.0.1:1080
 ### socks5 server & port forward  
 -resocks ip1:port1 ip2:port2
 #### 说明
-本地建立一个socks5服务并且主动转发到公网服务器端口上，只需要提供本地ip:port  
+本地建立一个socks5服务并且主动转发到公网服务器端口上
 ps:由于go使用goroutine时,主进程必须堵塞,所以我直接使用了Scanln卡死进程,所以使用resocks参数时,进程启动后不要输入回车,不然会自动退出。  
 #### 示例 
 NatSocks -resocks 127.0.0.1:1080 8.8.8.8:1997
