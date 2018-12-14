@@ -51,7 +51,7 @@ NatSocks -resocks 127.0.0.1:1080 8.8.8.8:1997
 
 ## 安装or下载  
 ### 自行安装
-安装go环境以及依赖库后
+安装go环境以及依赖库后  
 go build NatSocks.go
 
 ### windows,linux,osx (x64/x84) releases  
