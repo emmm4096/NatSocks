@@ -2,7 +2,7 @@
 lcx with socks server
 
 ## 用法
-基本使用方法跟lcx无差别  
+基本使用方法跟lcx无差别,增加了socks服务,除去了上传多文件的繁琐。  
 ### 监听   
 -listen port1 port2  
 #### 说明
