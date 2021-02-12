@@ -233,11 +233,11 @@ func start_server(address string) net.Listener {
 
 func start_socks(address1 string) {
 	socks5.Debug = true
-	s, err := socks5.NewClassicServer(address1 , "127.0.0.1", "", "", 0, 0, 0, 60)
+	s, err := socks5.NewClassicServer(address1 , "127.0.0.1", "", "", 20,20)
 	if err != nil {
 		panic(err)
 	}
-	if err := s.Run(nil); err != nil {
+	if err := s.ListenAndServe(nil); err != nil {
 		panic(err)
 	}
 }
